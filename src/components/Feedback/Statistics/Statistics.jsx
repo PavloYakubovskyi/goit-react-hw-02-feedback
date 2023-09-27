@@ -1,4 +1,4 @@
-import { OptionsItem } from "./Statistics.styled";
+import { OptionsItem, StatisticText } from "./Statistics.styled";
 
 const Statistics = ({
   options: { good, neutral, bad },
@@ -7,11 +7,11 @@ const Statistics = ({
 }) => {
   return (
     <ListOptions>
-      <OptionsItem>Good: {good}</OptionsItem>
-      <OptionsItem>Neutral: {neutral}</OptionsItem>
-      <OptionsItem>Bad: {bad}</OptionsItem>
-      <OptionsItem>Total: {total}</OptionsItem>
-      <OptionsItem>Positive feedback: {positivePercentage}%</OptionsItem>
+      <StatisticText>Good: {good}</StatisticText>
+      <StatisticText>Neutral: {neutral}</StatisticText>
+      <StatisticText>Bad: {bad}</StatisticText>
+      <StatisticText>Total: {total}</StatisticText>
+      <StatisticText>Positive feedback: {positivePercentage}%</StatisticText>
     </ListOptions>
   );
 };

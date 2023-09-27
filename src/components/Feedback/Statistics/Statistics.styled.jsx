@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
-export const OptionsItem = styled.p`
-  color: #fff;
+export const StatisticText = styled.p`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 18px;

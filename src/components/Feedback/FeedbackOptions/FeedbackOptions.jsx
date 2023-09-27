@@ -1,17 +1,20 @@
+import { FeedbackBtn } from "./FeedbackOptions.styled";
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   // console.log(options);
   const keys = Object.keys(options);
   return (
     <>
       {keys.map((key) => (
-        <button
+        <FeedbackBtn
+          type="button"
           key={key}
           onClick={() => {
             onLeaveFeedback(key);
           }}
         >
           {key}
-        </button>
+        </FeedbackBtn>
       ))}
     </>
   );
